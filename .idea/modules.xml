@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Exercicios/Exercicios.iml" filepath="$PROJECT_DIR$/Exercicios/Exercicios.iml" />
       <module fileurl="file://$PROJECT_DIR$/OrientacaoObj/OrientacaoObj.iml" filepath="$PROJECT_DIR$/OrientacaoObj/OrientacaoObj.iml" />
       <module fileurl="file://$PROJECT_DIR$/Treinamento.iml" filepath="$PROJECT_DIR$/Treinamento.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modulo1-itau-projeto1/modulo1-itau-projeto11.iml" filepath="$PROJECT_DIR$/modulo1-itau-projeto1/modulo1-itau-projeto11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modulo1-itau-projeto1/modulo1-itau-projeto1.iml" filepath="$PROJECT_DIR$/modulo1-itau-projeto1/modulo1-itau-projeto1.iml" />
     </modules>
   </component>
 </project>
