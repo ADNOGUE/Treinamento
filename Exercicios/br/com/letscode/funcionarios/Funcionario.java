@@ -1,8 +1,8 @@
 package br.com.letscode.funcionarios;
 
 import java.util.Objects;
-import java.util.Scanner;
-import java.util.Formatter;
+
+
 
 public class Funcionario {
 

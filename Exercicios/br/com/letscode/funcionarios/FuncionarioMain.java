@@ -1,7 +1,7 @@
 package br.com.letscode.funcionarios;
 
 import java.util.Scanner;
-import java.util.Formatter;
+
 
 public class FuncionarioMain {
     public static void main(String[] args) {
