@@ -2,6 +2,7 @@ package br.com.letscode.funcionarios;
 
 import java.util.Objects;
 import java.util.Scanner;
+import java.util.Formatter;
 
 public class Funcionario {
 
@@ -9,23 +10,13 @@ public class Funcionario {
     public String nome;
     public String cpf;
     public double salarioBase;
-    public Funcionario coordenador;
 
 
-    public void quantidadeDias() {
-        Scanner entrada = new Scanner(System.in);
-        System.out.println("digite a quantidade de dias trabalhados: ");
-        int qtdDias = entrada.nextInt();
-
-        this.coordenador.calculaSalario(qtdDias);
-
-    }
-
-    public void calculaSalario(int qtdDias) {
+      public void calculaSalario(int qtdDias) {
 
 
-        double salarioProporcional = (this.coordenador.salarioBase / 30) * qtdDias;
-        System.out.println("o salário proporcional é " + salarioProporcional);
+        double salarioProporcional = (salarioBase / 30) * qtdDias;
+        System.out.printf("o salário proporcional é R$  %.2f ",  salarioProporcional);
 
     }
 
