@@ -15,11 +15,7 @@ public class Principal {
         String produtoCaro = produtoResul.obterMaisCaro(listaProdutos);
         String produtoBarato = produtoResul.obterMaisBarato(listaProdutos);
 
-        System.out.println("O produto mais barato é: "+ produtoBarato);
-        System.out.println("O produto mais caro é: "+produtoCaro);
-
-
-
-
+        System.out.printf("O produto mais barato é: ", produtoBarato);
+        System.out.printf("O produto mais barato é: ", produtoCaro);
     }
 }
