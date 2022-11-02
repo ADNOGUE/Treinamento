@@ -1,20 +1,24 @@
 package br.com.letscode.funcionarios;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 
 public class FuncionarioMain {
     public static void main(String[] args) {
 
-        Funcionario coordenador = new Funcionario();
-        coordenador.nome = "Adriana";
-        coordenador.cpf  = "297.218.478.52";
-        coordenador.salarioBase = 1000;
 
-        Funcionario gerente = new Funcionario();
-        gerente.nome = "Rodrigo";
-        gerente.cpf  = "299.288.498.55";
-        gerente.salarioBase = 20000;
+        Funcionario coordenador = new Funcionario(
+                "Adriana, " ,
+                "297.218.478.52",
+                BigDecimal.valueOf(10000d)
+        );
+
+        Funcionario gerente = new Funcionario(
+                "Rodrigo",
+                "299.288.498.55",
+                BigDecimal.valueOf(20000d)
+        );
 
         coordenador.imprimirToString();
         gerente.imprimirToString();

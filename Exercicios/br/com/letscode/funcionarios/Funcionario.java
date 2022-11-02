@@ -1,21 +1,53 @@
 package br.com.letscode.funcionarios;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Objects;
-
+import java.util.Set;
 
 
 public class Funcionario {
 
     //atributos
-    public String nome;
-    public String cpf;
-    public double salarioBase;
+    private String nome;
+    private String cpf;
+    private BigDecimal salarioBase;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public BigDecimal getSalarioBase() {
+        return salarioBase;
+    }
+
+    public void setSalarioBase(BigDecimal salarioBase) {
+        this.salarioBase = salarioBase;
+    }
+
+    public Funcionario(String nome, String cpf, BigDecimal salarioBase){
+        this.setNome(nome);
+        this.setCpf(cpf);
+        this.setSalarioBase(salarioBase);
+    }
+
+    public void calculaSalario(int qtdDias) {
 
 
-      public void calculaSalario(int qtdDias) {
-
-
-        double salarioProporcional = (salarioBase / 30) * qtdDias;
+        BigDecimal salarioDia = (salarioBase.divide(new BigDecimal("30"), RoundingMode.HALF_UP));
+        BigDecimal salarioProporcional = salarioDia.multiply(BigDecimal.valueOf(qtdDias));
         System.out.printf("o salário proporcional é R$  %.2f ",  salarioProporcional);
 
     }
